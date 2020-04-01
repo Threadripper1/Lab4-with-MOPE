@@ -132,9 +132,7 @@ if cochran_check(Y_matrix):
     print("Індекси коефіціентів, які задовольняють критерію Стьюдента: ",
           np.array(indexes)[0])
     print("Критерій Стьюдента: ", np.sum(b_natura[indexes] *
-                                         np.reshape(plan_matr[:,
-
-                                                    indexes], (N, np.size(indexes))), axis=1))
+                                         np.reshape(plan_matr[:,indexes], (N, np.size(indexes))), axis=1))
     if phisher_criterion(Y_matrix, np.size(indexes)):
         print("\nРівняння регресії адекватно оригіналу.")
     else:
